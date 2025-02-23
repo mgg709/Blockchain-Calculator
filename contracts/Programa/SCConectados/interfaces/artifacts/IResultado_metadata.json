@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num_",
+						"type": "uint256"
+					}
+				],
+				"name": "setResultado",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Programa/SCConectados/interfaces/IResultado.sol": "IResultado"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Programa/SCConectados/interfaces/IResultado.sol": {
+			"keccak256": "0xa19cc155561c20adc57119668b7bfb18bbdfd91bb97f6e7ce908df5c0831389c",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://460c5c58b03bce81eac5e704985c12a91d13d416a13f7529e671f75cd532056e",
+				"dweb:/ipfs/QmPEgbmX1Zq1zQKavjqLvjE55rFTEYnriEybcMr1Ti94mG"
+			]
+		}
+	},
+	"version": 1
+}

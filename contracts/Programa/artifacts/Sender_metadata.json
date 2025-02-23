@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Programa/Sender.sol": "Sender"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Programa/Sender.sol": {
+			"keccak256": "0x92fe1c735b512f73ce95a4b3f60628a19707721aa924485ce17ad1422f18489d",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://f849d92dae880a247c33b7fedac2a5c63cd76561c5eb1638a52b49bfb7ad8e87",
+				"dweb:/ipfs/QmZmoPLxVBdJCPVyuJGHLEPv5uKyPBzumYsp5K1yiyZjT8"
+			]
+		}
+	},
+	"version": 1
+}
