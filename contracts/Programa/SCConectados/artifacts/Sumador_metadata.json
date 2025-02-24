@@ -11,6 +11,11 @@
 						"internalType": "address",
 						"name": "resultado_",
 						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "admin_",
+						"type": "address"
 					}
 				],
 				"stateMutability": "nonpayable",
@@ -30,6 +35,58 @@
 					}
 				],
 				"name": "addition",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "admin",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "fee",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "resultado",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "newFee_",
+						"type": "uint256"
+					}
+				],
+				"name": "setFee",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -63,11 +120,11 @@
 	},
 	"sources": {
 		"contracts/Programa/SCConectados/Sumador.sol": {
-			"keccak256": "0xb731eb4e5d0c36f82387c9d7766cccf68ef1d17f407d0a7dd130cd53e9f44f75",
+			"keccak256": "0x5490dc58635c14da0645c7f8fa601ba489a2190e31f30848131e9530a4a029c8",
 			"license": "LGPL-3.0-only",
 			"urls": [
-				"bzz-raw://ff87640afbacc2db441268fe01498610f990ae12f97c580c948cb5a060c322c5",
-				"dweb:/ipfs/QmdABrELB6KLgsKyUw4X4MoCdVHiyRNXKWSzpLdWZUo1S8"
+				"bzz-raw://02ab47f9e701d9b458442b1fcd8db501da070a5ff8a21d503b4c9b5b107584c9",
+				"dweb:/ipfs/QmbF4PydjDfDr4mUucz2z53K2PR9i846ZD9cRhQ4E5J8KJ"
 			]
 		},
 		"contracts/Programa/SCConectados/interfaces/IResultado.sol": {
