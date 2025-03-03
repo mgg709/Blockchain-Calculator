@@ -11,11 +11,6 @@
 						"internalType": "address",
 						"name": "resultado_",
 						"type": "address"
-					},
-					{
-						"internalType": "address",
-						"name": "admin_",
-						"type": "address"
 					}
 				],
 				"stateMutability": "nonpayable",
@@ -37,32 +32,6 @@
 				"name": "addition",
 				"outputs": [],
 				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "admin",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "fee",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -120,19 +89,19 @@
 	},
 	"sources": {
 		"contracts/Programa/SCConectados/Sumador.sol": {
-			"keccak256": "0x5490dc58635c14da0645c7f8fa601ba489a2190e31f30848131e9530a4a029c8",
+			"keccak256": "0x761fdab4aec5bcaac39fb0b6ef2cd95b2a79cd259040b4e73b731f825ff43f05",
 			"license": "LGPL-3.0-only",
 			"urls": [
-				"bzz-raw://02ab47f9e701d9b458442b1fcd8db501da070a5ff8a21d503b4c9b5b107584c9",
-				"dweb:/ipfs/QmbF4PydjDfDr4mUucz2z53K2PR9i846ZD9cRhQ4E5J8KJ"
+				"bzz-raw://48324a4a24d121186b8f0c2ca2300e8d8307ce6587f3ad5fd38da30098343b41",
+				"dweb:/ipfs/QmVXuNyJxGX4AJsS7Q6tuH9X6VpRLikTSyW92M7F8sTbL9"
 			]
 		},
 		"contracts/Programa/SCConectados/interfaces/IResultado.sol": {
-			"keccak256": "0xa19cc155561c20adc57119668b7bfb18bbdfd91bb97f6e7ce908df5c0831389c",
+			"keccak256": "0x6c7bee55e00daa7f31d894f5127f0c8102b8ff7c64964c113f3e9521be65df17",
 			"license": "LGPL-3.0-only",
 			"urls": [
-				"bzz-raw://460c5c58b03bce81eac5e704985c12a91d13d416a13f7529e671f75cd532056e",
-				"dweb:/ipfs/QmPEgbmX1Zq1zQKavjqLvjE55rFTEYnriEybcMr1Ti94mG"
+				"bzz-raw://2595f892749ba3b4aff7da9c9b3aede6b7889573e7c74ee9f348fe8fd0f451a8",
+				"dweb:/ipfs/QmWxDWub5gB2T79E14oCYz17kgnjnDfYXEMYMGNBGdgXgo"
 			]
 		}
 	},

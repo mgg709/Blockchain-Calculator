@@ -1,5 +1,5 @@
 {
-	"id": "c9ba30b8f53a43eaad668ccf47298b08",
+	"id": "e1382f93d5f69fc4184dbf22f46af963",
 	"_format": "hh-sol-build-info-1",
 	"solcVersion": "0.8.24",
 	"solcLongVersion": "0.8.24+commit.e11b9ed9",
@@ -7,7 +7,7 @@
 		"language": "Solidity",
 		"sources": {
 			"contracts/Programa/SCConectados/interfaces/IResultado.sol": {
-				"content": "//SPDX-License-Identifier: LGPL-3.0-only\r\n\r\npragma solidity 0.8.24;\r\n\r\ninterface IResultado {\r\n\r\n    function setResultado(uint256 num_) external;\r\n\r\n}"
+				"content": "//SPDX-License-Identifier: LGPL-3.0-only\r\n\r\npragma solidity 0.8.24;\r\n\r\ninterface IResultado {\r\n\r\n    function setResultado(uint256 num_) external;\r\n    function setFee(uint256 newFee_) external;\r\n\r\n}"
 			}
 		},
 		"settings": {
@@ -43,6 +43,19 @@
 			"contracts/Programa/SCConectados/interfaces/IResultado.sol": {
 				"IResultado": {
 					"abi": [
+						{
+							"inputs": [
+								{
+									"internalType": "uint256",
+									"name": "newFee_",
+									"type": "uint256"
+								}
+							],
+							"name": "setFee",
+							"outputs": [],
+							"stateMutability": "nonpayable",
+							"type": "function"
+						},
 						{
 							"inputs": [
 								{
@@ -84,10 +97,11 @@
 						"gasEstimates": null,
 						"legacyAssembly": null,
 						"methodIdentifiers": {
+							"setFee(uint256)": "69fe0e2d",
 							"setResultado(uint256)": "7e0a7def"
 						}
 					},
-					"metadata": "{\"compiler\":{\"version\":\"0.8.24+commit.e11b9ed9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"num_\",\"type\":\"uint256\"}],\"name\":\"setResultado\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/Programa/SCConectados/interfaces/IResultado.sol\":\"IResultado\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/Programa/SCConectados/interfaces/IResultado.sol\":{\"keccak256\":\"0xa19cc155561c20adc57119668b7bfb18bbdfd91bb97f6e7ce908df5c0831389c\",\"license\":\"LGPL-3.0-only\",\"urls\":[\"bzz-raw://460c5c58b03bce81eac5e704985c12a91d13d416a13f7529e671f75cd532056e\",\"dweb:/ipfs/QmPEgbmX1Zq1zQKavjqLvjE55rFTEYnriEybcMr1Ti94mG\"]}},\"version\":1}",
+					"metadata": "{\"compiler\":{\"version\":\"0.8.24+commit.e11b9ed9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"newFee_\",\"type\":\"uint256\"}],\"name\":\"setFee\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"num_\",\"type\":\"uint256\"}],\"name\":\"setResultado\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/Programa/SCConectados/interfaces/IResultado.sol\":\"IResultado\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/Programa/SCConectados/interfaces/IResultado.sol\":{\"keccak256\":\"0x6c7bee55e00daa7f31d894f5127f0c8102b8ff7c64964c113f3e9521be65df17\",\"license\":\"LGPL-3.0-only\",\"urls\":[\"bzz-raw://2595f892749ba3b4aff7da9c9b3aede6b7889573e7c74ee9f348fe8fd0f451a8\",\"dweb:/ipfs/QmWxDWub5gB2T79E14oCYz17kgnjnDfYXEMYMGNBGdgXgo\"]}},\"version\":1}",
 					"storageLayout": {
 						"storage": [],
 						"types": null
@@ -106,10 +120,10 @@
 					"absolutePath": "contracts/Programa/SCConectados/interfaces/IResultado.sol",
 					"exportedSymbols": {
 						"IResultado": [
-							7
+							12
 						]
 					},
-					"id": 8,
+					"id": 13,
 					"license": "LGPL-3.0-only",
 					"nodeType": "SourceUnit",
 					"nodes": [
@@ -130,9 +144,9 @@
 							"contractDependencies": [],
 							"contractKind": "interface",
 							"fullyImplemented": false,
-							"id": 7,
+							"id": 12,
 							"linearizedBaseContracts": [
-								7
+								12
 							],
 							"name": "IResultado",
 							"nameLocation": "81:10:0",
@@ -187,20 +201,75 @@
 										"parameters": [],
 										"src": "145:0:0"
 									},
-									"scope": 7,
+									"scope": 12,
 									"src": "101:45:0",
+									"stateMutability": "nonpayable",
+									"virtual": false,
+									"visibility": "external"
+								},
+								{
+									"functionSelector": "69fe0e2d",
+									"id": 11,
+									"implemented": false,
+									"kind": "function",
+									"modifiers": [],
+									"name": "setFee",
+									"nameLocation": "161:6:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 9,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 8,
+												"mutability": "mutable",
+												"name": "newFee_",
+												"nameLocation": "176:7:0",
+												"nodeType": "VariableDeclaration",
+												"scope": 11,
+												"src": "168:15:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												},
+												"typeName": {
+													"id": 7,
+													"name": "uint256",
+													"nodeType": "ElementaryTypeName",
+													"src": "168:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_uint256",
+														"typeString": "uint256"
+													}
+												},
+												"visibility": "internal"
+											}
+										],
+										"src": "167:17:0"
+									},
+									"returnParameters": {
+										"id": 10,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "193:0:0"
+									},
+									"scope": 12,
+									"src": "152:42:0",
 									"stateMutability": "nonpayable",
 									"virtual": false,
 									"visibility": "external"
 								}
 							],
-							"scope": 8,
-							"src": "71:80:0",
+							"scope": 13,
+							"src": "71:128:0",
 							"usedErrors": [],
 							"usedEvents": []
 						}
 					],
-					"src": "44:107:0"
+					"src": "44:155:0"
 				},
 				"id": 0
 			}

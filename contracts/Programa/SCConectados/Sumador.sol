@@ -8,13 +8,9 @@ contract Sumador {
 
     //Object: Interfaz + address smart contract que se quiere inicializar
     address public resultado;
-    address public admin;
-    uint256 public fee;
 
-    constructor(address resultado_, address admin_) {
+    constructor(address resultado_) {
         resultado = resultado_;
-        admin = admin_;
-        fee = 5;
     }
 
     function addition(uint256 num1_, uint256 num2_) external {
@@ -23,7 +19,8 @@ contract Sumador {
     }
 
     function setFee(uint256 newFee_) external {
-        if (msg.sender != admin) revert();
-        fee = newFee_;
+        IResultado(resultado).setFee(newFee_);
     }
+
+    
 }

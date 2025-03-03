@@ -9,6 +9,19 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
+						"name": "newFee_",
+						"type": "uint256"
+					}
+				],
+				"name": "setFee",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
 						"name": "num_",
 						"type": "uint256"
 					}
@@ -47,11 +60,11 @@
 	},
 	"sources": {
 		"contracts/Programa/SCConectados/interfaces/IResultado.sol": {
-			"keccak256": "0xa19cc155561c20adc57119668b7bfb18bbdfd91bb97f6e7ce908df5c0831389c",
+			"keccak256": "0x6c7bee55e00daa7f31d894f5127f0c8102b8ff7c64964c113f3e9521be65df17",
 			"license": "LGPL-3.0-only",
 			"urls": [
-				"bzz-raw://460c5c58b03bce81eac5e704985c12a91d13d416a13f7529e671f75cd532056e",
-				"dweb:/ipfs/QmPEgbmX1Zq1zQKavjqLvjE55rFTEYnriEybcMr1Ti94mG"
+				"bzz-raw://2595f892749ba3b4aff7da9c9b3aede6b7889573e7c74ee9f348fe8fd0f451a8",
+				"dweb:/ipfs/QmWxDWub5gB2T79E14oCYz17kgnjnDfYXEMYMGNBGdgXgo"
 			]
 		}
 	},
