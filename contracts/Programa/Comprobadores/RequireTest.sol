@@ -2,6 +2,8 @@
 
 pragma solidity 0.8.24;
 
+error SenderNotAdmin(address);
+
 contract RequireTest {
 
     address public admin;
@@ -17,5 +19,9 @@ contract RequireTest {
 
     function checkAdminRequire() public view {
         require(msg.sender == admin, "Msg.sender is not admin");
+    }
+
+    function checkAdminCustomErrors() public view {
+        if (msg.sender != admin) revert SenderNotAdmin(msg.sender);
     }
 }

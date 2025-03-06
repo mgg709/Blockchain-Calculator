@@ -17,6 +17,17 @@
 				"type": "constructor"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "SenderNotAdmin",
+				"type": "error"
+			},
+			{
 				"inputs": [],
 				"name": "admin",
 				"outputs": [
@@ -32,6 +43,13 @@
 			{
 				"inputs": [],
 				"name": "checkAdmin",
+				"outputs": [],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkAdminCustomErrors",
 				"outputs": [],
 				"stateMutability": "view",
 				"type": "function"
@@ -72,11 +90,11 @@
 	},
 	"sources": {
 		"contracts/Programa/Comprobadores/RequireTest.sol": {
-			"keccak256": "0x6b37743a24a0022fe759d2f4ec115b97c164253b85eb11fbca827f0545367d20",
+			"keccak256": "0xf4d38ba27e4970d9a643b637c577f2161410086daabc777bcb250f62e32213f1",
 			"license": "LGPL-3.0-only",
 			"urls": [
-				"bzz-raw://f59a11c53560ea0e5a14843356993e6cfd9dc507dda459964ffbf1c012733828",
-				"dweb:/ipfs/QmWUhPyNQntf1Yag35PoUG3qXzQmFefh4cSmgJauJjKK9t"
+				"bzz-raw://cfb06f705b61ab2606ea1cbd5c50294bab5f0181d175e1b356a93b51ec5f7e1d",
+				"dweb:/ipfs/QmU1ueJ4SUg2EJqW8bMNHMK31ePeiEBFgBFSkXm8StUHUd"
 			]
 		}
 	},
