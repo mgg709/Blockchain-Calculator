@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "sendEther",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Programa/PayableFunctions/PayableContract.sol": "PayableContract"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Programa/PayableFunctions/PayableContract.sol": {
+			"keccak256": "0xd8ca005103b4f9835773517f800861742def787e651338698fc22fda33ec0e5c",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://f0c8819f1e3fbb5143de3dca80c1d92e936bd9534e0b168a3bc1d1e32c36c108",
+				"dweb:/ipfs/Qmb8PNN1X9XbTNMDfSWkhVciQb5CiR8Fsr76nyw7mbSKzp"
+			]
+		}
+	},
+	"version": 1
+}
